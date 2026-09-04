@@ -95,13 +95,6 @@
         ],
         "pre-package-uninstall": [
             "Illuminate\\Foundation\\ComposerScripts::prePackageUninstall"
-        ],
-        "vercel": [
-            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
-            "@php artisan key:generate --ansi",
-            "npm install",
-            "npm run build",
-            "@php artisan migrate --force"
         ]
     },
     "extra": {
